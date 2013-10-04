@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <plugin xmlns="http://www.phonegap.com/ns/plugins/1.0"
     xmlns:android="http://schemas.android.com/apk/res/android"
-    id="com.phonegap.plugins.GAPlugin"
-    version="2.1.4">
+    id="com.adobe.plugins.GAPlugin"
+    version="2.1.5">
 
     <name>GAPlugin</name>
 	<author>Bob Easterday</author>
@@ -33,10 +33,6 @@
     
     <!-- ios -->
     <platform name="ios">
-		<!-- Cordova < 2.3 -->
-        <plugins-plist key="GAPlugin" string="GAPlugin" />
-                    
-		<!-- Cordova >= 2.3 -->
 		<config-file target="config.xml" parent="plugins">
 			<plugin name="GAPlugin" value="GAPlugin"/>
 		</config-file>  
