@@ -15,8 +15,7 @@ public class GAPlugin extends CordovaPlugin {
 
 		if (action.equals("initGA")) {
 			try {
-				tracker = ga.getTracker(args.getString(0));
-				GAServiceManager.getInstance().setDispatchPeriod(args.getInt(1));
+				tracker = ga.getTracker(args.getString(0));				
 				ga.setDefaultTracker(tracker);
 				callback.success("initGA - id = " + args.getString(0) + "; interval = " + args.getInt(1) + " seconds");
 				return true;
@@ -24,8 +23,7 @@ public class GAPlugin extends CordovaPlugin {
 				callback.error(e.getMessage());
 			}
 		} else if (action.equals("exitGA")) {
-			try {
-				GAServiceManager.getInstance().dispatch();
+			try {				
 				callback.success("exitGA");
 				return true;
 			} catch (final Exception e) {
