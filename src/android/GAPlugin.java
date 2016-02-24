@@ -4,9 +4,8 @@ import org.apache.cordova.CallbackContext;
 import org.apache.cordova.CordovaPlugin;
 import org.json.JSONArray;
 
-import com.google.analytics.tracking.android.GAServiceManager;
-import com.google.analytics.tracking.android.GoogleAnalytics;
-import com.google.analytics.tracking.android.Tracker;
+import com.google.android.gms.common.*;
+import com.google.android.gms.analytics.*;
 
 public class GAPlugin extends CordovaPlugin {
 	@Override
