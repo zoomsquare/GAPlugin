@@ -32,6 +32,8 @@
                 target-dir="src/com/adobe/plugins" />
         <source-file src="src/android/libGoogleAnalyticsV3.jar"
                 target-dir="libs" />
+        <framework src="com.google.android.gms:play-services-analytics:+"/>
+
     </platform>
 
     <platform name="ios">
